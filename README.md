@@ -2,6 +2,8 @@
 
 ## Setup
 
+Make sure you have [Melodia](https://www.upf.edu/web/mtg/melodia) installed as a Vamp plugin.
+
 To setup the environment, run:
 
 ```sh
