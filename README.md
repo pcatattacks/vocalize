@@ -20,10 +20,10 @@ Deactivate it by running `source deactivate`.
 
 ## Updating Dependencies
 
-When any new dependencies are installed, committing your work, make sure to run:
+When any new dependencies are installed, before committing your work, make sure to run:
 
 ```sh
-conda env export | grep -v "^prefix: " > environment.yml 
+./export_env.sh
 ```
 
 This writes the changes to the `environment.yml` file.
