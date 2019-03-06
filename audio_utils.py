@@ -24,6 +24,19 @@ def plot_audio(x, sr, figsize=(16,4)):
     plt.ylabel('Amplitude')
     plt.xlabel('Time (s)')
     plt.show()
+    
+def play_audio(x, sr):
+    """
+    A simple function that plays audio at a given sample rate.
+    
+    Parameters
+    ----------
+    x: np.ndarray
+        Audio signal to plot
+    sr: int
+        Sample rate
+    """
+    IPython.display.display(IPython.display.Audio(x, rate=sr))
 
 def wavwrite(filepath, data, sr, norm=True, dtype='int16',):
     '''
@@ -64,8 +77,9 @@ def make_sinewave(f, t, sr):
     np.ndarray 
         Array of floats containing the signal
     """
-    t = np.arange(0,t*sr)/sr
-    x = np.sin(2*np.pi*f*t)
+    
+    time = np.arange(0,t*sr)/sr
+    x = np.sin(2*np.pi*f*time)
     return x
 
 def stft(signal, window_size, hop_size, window_type = 'hann'):
