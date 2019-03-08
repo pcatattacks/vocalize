@@ -6,6 +6,7 @@ audio/
 venv/
 wav/
 *.yml
+temp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
