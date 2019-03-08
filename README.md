@@ -19,6 +19,8 @@ virtualenv -p <path_to_python_interpreter> venv
 
 The virtual environment must be active when running the program. Activate it by running:
 
+For now, you need to download a compressed audio folder from [here](https://drive.google.com/file/d/1mZwDNJIu21CaAo5-2-ITv7e-7oGCU6Gs/view?usp=sharing). Uncompress this folder and place it in the working directory before running any files.
+
 ```sh
 source venv/bin/activate
 ```
