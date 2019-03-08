@@ -1,6 +1,6 @@
 .vscode/
 venv/
-audio/
+audio/*
 wav/
 *.yml
 
