@@ -1,7 +1,11 @@
+*.zip
+*.rar
+*.7z
 .vscode/
+audio/
+venv/
 wav/
 *.yml
-
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
