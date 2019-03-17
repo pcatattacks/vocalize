@@ -1,23 +1,25 @@
-# What is Vocalize?
+# Vocalize
+
+## What is Vocalize?
 
 test
 
-# Motivation (why?)
+## Motivation (why?)
 
 test
 
-# Usage
+## Usage
 
 test
 
-## Build
+### Build
 
 test
 
-## Test
+### Test
 
 test
 
-# Results
+## Results
 
 test
