@@ -1,5 +1,7 @@
 # vocalize
 
+Documentation and website at: https://pcatattacks.github.io/vocalize/index.html
+
 ## Setup
 
 Make sure you have [pip](https://pip.pypa.io/en/stable/installing/) installed. Make sure you're using Python 2.7.
