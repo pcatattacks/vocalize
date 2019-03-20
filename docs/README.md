@@ -18,7 +18,7 @@ test
 
 ### Test
 
-![foo](accuracy-heatmap.pdf)
+![foo](accuracy-heatmap.png)
 
 ## Results
 
