@@ -8,6 +8,7 @@ bleach==3.1.0
 cffi==1.12.2
 configparser==3.7.3
 cycler==0.10.0
+Cython==0.29.6
 decorator==4.3.2
 defusedxml==0.5.0
 entrypoints==0.3
@@ -31,8 +32,10 @@ jupyter-core==4.4.0
 kiwisolver==1.0.1
 librosa==0.6.3
 llvmlite==0.27.1
+madmom==0.16.1
 MarkupSafe==1.1.1
 matplotlib==2.2.4
+mido==1.2.9
 mir-eval==0.5
 mistune==0.8.4
 musdb==0.2.3
