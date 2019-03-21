@@ -42,7 +42,34 @@ The three methods were compared on 10 snippets of audio, which included one note
 
 ## Results
 
-test
+Input text
+
+```python
+"""
+Fly me to the moon
+Let me play among the stars
+"""
+```
+
+Generated Speech
+
+<audio controls="controls"><source src="audio/flymetothemoon_speech.wav" type="audio/x-wav">Your browser does not support the audio element</audio>
+
+Input song
+
+<audio controls="controls"><source src="audio/FlyMeToTheMoon.wav" type="audio/x-wav">Your browser does not support the audio element</audio>
+
+Onset Detection
+
+<audio controls="controls"><source src="audio/flymetothemoon_clicks.wav" type="audio/x-wav">Your browser does not support the audio element</audio>
+
+Voice Signal
+
+<audio controls="controls"><source src="audio/flymetothemoon_tunedvoice.wav" type="audio/x-wav">Your browser does not support the audio element</audio>
+
+Song + Vocals
+
+<audio controls="controls"><source src="audio/flymetothemoon_output.wav" type="audio/x-wav">Your browser does not support the audio element</audio>
 
 ## References
 
