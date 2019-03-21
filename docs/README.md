@@ -30,7 +30,7 @@ In order to achieve this separation, we used the `Pydub` library which provides 
 
 In order to achieve optimal performance, we ran an experiment to determine the best combination of parameters. Using a dataset that related words to their number of syllables when spoken, we were able to measure the accuracy of a given parameter combination by checking if the number of syllables generated for each word was correct for some set of words. Below we have plotted the results of the experiment and on a corpus of 500 words, the best combination had an accuracy of 96%.
 
-![Syllable Splitting Accuracy Heatmap](accuracy-heatmap.png)
+![Syllable Splitting Accuracy Heatmap](images/accuracy-heatmap.png)
 
 ## Results
 
