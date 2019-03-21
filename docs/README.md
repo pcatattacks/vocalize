@@ -32,6 +32,14 @@ In order to achieve optimal performance, we ran an experiment to determine the b
 
 ![Syllable Splitting Accuracy Heatmap](images/accuracy-heatmap.png)
 
+### Onset Detection
+
+Another one of our goals was to find the starting time for every note in the melody so that we could modify each syllable to the correct pitch and rhythm of the given note. We used onset detection to find the intervals of every note under the assumption that every new note would be represented as a peak in the audio signal. There were three different methods investigated in our approach: librosa's onset detection, madmom’s onset detection using a Convolutional Neural Network, and madmom’s onset detection using a Recurrent Neural Network.
+
+The three methods were compared on 10 snippets of audio, which included one note piano melodies, instrumental solos, and voice with instrumental tracks. The graph below shows the average error of each method in determining the number of onsets for each audio clip. It can be seen that madmom’s RNN method of onset detection had the best performance on the 10 randomly chosen audio samples. As a result, we have chosen to use this method to determine the onsets of each note in the audio signal.
+
+![Onset Detection Evaluation](images/onset_detect_evaluation.png)
+
 ## Results
 
 test
