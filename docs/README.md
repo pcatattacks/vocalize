@@ -17,14 +17,31 @@ Vocalize is designed to map text onto an instrumental audio signal such that the
 5. We map the syllables to the melodic rhythm and pitch to construct a new vocal signal that is "singing" the lyrics.
 6. We combine the new vocal signal and the background signal of the song to form a new song.
 
-### Build
+## Build/Test
 
-test
+### Syllable Separation
 
-### Test
+One of our goals was to map one syllable to one note of the melody. The reason being that multiple syllables of the same word could be sung at different pitches in a song. Take the *Happy Birthday* tune for example. The pitch for 'birth' is a whole step higher than the pitch for 'day'.
+
+In order to achieve this separation, we used the `Pydub` library which provides a utility to split audio signals on periods of silence. The `split_on_silence` function takes two parameters for deciding what is considered silence and hence, where to split the signal:
+
+- **Silence Threshold** - anything quieter than this will be considered silence
+- **Minimum Silence Length** - minimum length of a silence to be used for a split
+
+In order to achieve optimal performance, we ran an experiment to determine the best combination of parameters. Using a dataset that related words to their number of syllables when spoken, we were able to measure the accuracy of a given parameter combination by checking if the number of syllables generated for each word was correct for some set of words. Below we have plotted the results of the experiment and on a corpus of 500 words, the best combination had an accuracy of 96%.
 
 ![Syllable Splitting Accuracy Heatmap](accuracy-heatmap.png)
 
 ## Results
 
 test
+
+## Appendix
+
+### Packages
+
+- [`Pydub`](http://pydub.com/)
+
+### Data
+
+- [DelphiForFun Syllables](http://www.delphiforfun.org/programs/Syllables.htm)
