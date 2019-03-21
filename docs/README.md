@@ -6,16 +6,16 @@ Vocalize is a project by Jeffrey Holm, Louisa Lee, and Pranav Dhingra for the EE
 
 ## Motivation (why?)
 
-Vocalize is designed to map text onto an instrumental audio signal such that the text is “sung” on top of the melody of the tune. Ultimately, we wanted to create a “text to sing” software that would combine state of the art techniques in text to speech synthesis, melody extraction, pitch identification, and autotuning so that vocals can be synthesized completely from a machine when given text and and a base instrumental audio piece.
+*Vocalize* is designed to map text onto an instrumental audio signal such that the text is “sung” on top of the melody of the tune. Ultimately, we wanted to create a “text to sing” software that would combine state of the art techniques in text to speech synthesis, melody extraction, pitch identification, and autotuning so that vocals can be synthesized completely from a machine when given text and and a base instrumental audio piece.
 
 ## Usage
 
-1. Vocalize will take a text file of lyrics and an audio file of a song as input.
-2. Using the text file, we generate audio of the spoken lyrics and separate it into syllables.
-3. With source separation software we are able to pull out the  foreground (melody) and background signals of the input song.
-4. Running onset detection and pitch tracking software on the foreground signal gives us the melodic rhythm and pitch.
-5. We map the syllables to the melodic rhythm and pitch to construct a new vocal signal that is "singing" the lyrics.
-6. We combine the new vocal signal and the background signal of the song to form a new song.
+1. *Vocalize* will take a text file of lyrics and an audio file of a song as input.
+2. Using the text file, it generates audio of the spoken lyrics and separates it into syllables.
+3. Using the input audio file, *Vocalize* separates the foreground (melody) from the background.
+4. It extracts melodic rhythm and pitch of the foreground signal through onset detection and pitch tracking.
+5. It maps the syllables from step 2 on to the melodic rhythm and pitch from step 4 to construct a new vocal signal that is “singing” the lyrics.
+6. Finally, *Vocalize* combines the new vocal signal and the background signal of the song to form a new song.
 
 ## Build/Test
 
