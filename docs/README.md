@@ -36,12 +36,28 @@ In order to achieve optimal performance, we ran an experiment to determine the b
 
 test
 
-## Appendix
+## References
 
 ### Packages
 
-- [`Pydub`](http://pydub.com/)
+- [`pydub`](http://pydub.com/) for syllable separation
+- [`librosa`](https://librosa.github.io/) for pitch shifting + time stretching
+- [`espeak`](http://espeak.sourceforge.net/) for voice synthesis
+- [`nussl`](https://interactiveaudiolab.github.io/nussl/) for source separation
+- [`madmom`](https://madmom.readthedocs.io/en/latest/) for onset detection
+- [Melodia](https://www.upf.edu/web/mtg/melodia) for pitch tracking
 
 ### Data
 
-- [DelphiForFun Syllables](http://www.delphiforfun.org/programs/Syllables.htm)
+- [DelphiForFun Syllables](http://www.delphiforfun.org/programs/Syllables.htm) for evaluating syllable separation
+
+### Papers
+
+- Simon, Ian, Dan Morris, and Sumit Basu. "MySong: automatic accompaniment generation for vocal melodies." Proceedings of the SIGCHI conference on human factors in computing systems. ACM, 2008.
+<https://dl.acm.org/citation.cfm?id=1357169>
+- Saitou, Takeshi, et al. "Speech-to-singing synthesis: Converting speaking voices to singing voices by controlling acoustic features unique to singing voices." 2007 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics. IEEE, 2007.
+<https://ieeexplore.ieee.org/abstract/document/4393001>
+- George, E. Bryan, et al. "Singing voice synthesis." U.S. Patent No. 6,304,846. 16 Oct. 2001.
+<https://patents.google.com/patent/US6304846B1/en>
+- Salamon, Justin, and Emilia Gómez. "Melody extraction from polyphonic music signals using pitch contour characteristics." IEEE Transactions on Audio, Speech, and Language Processing 20.6 (2012): 1759-1770.
+<https://ieeexplore.ieee.org/abstract/document/6155601>
