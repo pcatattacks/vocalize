@@ -42,6 +42,14 @@ In order to achieve optimal performance, we ran an experiment to determine the b
 
 We used [nussl] to separate the melody from the background of the input audio signal. The melody was then processed through onset detection and pitch tracking.
 
+Foreground
+
+<audio controls="controls"><source src="audio/flymetothemoon-melody.wav" type="audio/x-wav">Your browser does not support the audio element</audio>
+
+Background
+
+<audio controls="controls"><source src="audio/flymetothemoon-background.wav" type="audio/x-wav">Your browser does not support the audio element</audio>
+
 ### Pitch Tracking
 
 We were able to use the [Melodia] algorithm in order to track the pitch of the melody. Given an audio signal, Melodia could return a time series of the melodic fundamental frequency.
